@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Start Title -->
+    <title>SD SANTA THERESIA</title>
+    <!-- End Title -->
+
+    <!-- Start Description -->
+    <meta name="description" content="Coding Design memberikan layanan terjangkau dan berkualitas.">
+    <!-- End Description -->
+
+    <!-- Start CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- End CSS-->
+</head>
+<body>
+    <!-- Start Logo -->
+    <div class="container logo">
+        <a href="index.html" title="Coding Design">
+            <img src="images/logo-design.JPG" alt="logo design"width="305" height="194">
+        </a>
+    </div>
+    <!-- End Logo -->
+						
+    <!--Start Menu Primer -->
+    <div class="container menu-primer">
+        <ul>
+            <li>
+                <a href="index.html"title="Beranda" class="active">Beranda</a>
+            </li>
+            <li>
+                <a href="tentang.html"title="Tentang Kami">TENTANG KAMI</a>
+            </li>
+            <li>
+                <a href="layanan.html"title="Layanan">KEGIATAN DAN LOMBA</a>
+            </li>
+            <li>
+                <a href="artikel.html"title="Artikel">ARTIKEL</a>
+            </li>
+            <li>
+                <a href="pembayaran.html"title="Cara pembayaran">FASILITAS</a>
+            </li>
+            <li>
+                <a href="pertanyaan.html"title="Pertanyaan">VISI DAN MISI</a>
+            </li>
+            <li>
+                <a href="kontak.html"title="KOntak Kami">Kontak Kami</a>
+            </li>
+        </ul>
+    </div>
+    <!-- End Menu Primer-->
+
+    <!-- Start Jumbotron-->
+   <!-- Slideshow container-->
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/img1.JPG" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/img2.JPG" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/img3.JPG" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    <!-- End Jumbotron -->
+    
+    <!-- Start Promo & Layanan -->
+    <div class="container">
+        <!-- Start Promo -->
+        <div class="main-home-one">
+            <div class="box-heading">
+                <h4>ekstrakurikuler</h4>
+            </div>
+            <div class="box-isi">
+                <ul>
+                    <li>BASKET</li>
+                    <li>FUTSAL</li>
+                    <li>SAINS</li>
+                    <li>CATUR</li>
+                    <li>ANGKLUNG</li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Promo -->
+
+        <!-- Start Layanan -->
+        <div class="main-home-two">
+            <div class="box-heading">
+                <h4>KURIKULUM</h4>
+            </div>
+            <div class="box-isi">
+                <ul>
+                    <li>
+                    <a href="layanan.html" title="Logo Design">NASIONAL K13</a></li>
+                    <li><a href="layanan.html" title="Logo Design">URSULIN</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Layanan -->
+    </div>
+</div>
+<!-- End Promo & Layanan -->
+
+    <!-- Start Artikel & Testimonial -->
+    <div class="container">
+        <!-- Start Artikel -->
+        <div class="main-home-one">
+            <div class="box-heading">
+                <h4>Artikel</h4>
+            </div>
+            <div class="box-isi">
+                <ol>
+                    <li>
+                        <a href="" title="Cara Mudah, Murah Membuat Website">KEGIATAN SAINT THERESIA  COMPETITION AWARD (STCA)</a>
+                    </li>
+                    <li>
+                        <a href="" title="Cara Membuat Website yang UI-nya Cantik dan UX-nya Baik ">Hari Pangan Sedunia</a>
+                    </li>
+                    <li>
+                        <a href="" title="Tips dan Trik Menarik Pengunjung">Tips dan Trik Menarik Pengunjung</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <!-- End Artikel -->
+
+        <!-- Start Testimonial -->
+        <div class="main-home-two">
+            <div class="box-heading">    
+                <h4>Testimonial</h4>
+            </div>
+            <div class="box-isi">
+                <blockquote class="testimonial">
+                    <p>
+                        <em>Sekolah ramah anak yang sangat mengutamakan karakter!</em>
+                    </p>
+                    <cite>-- Klien</cite>
+                </blockquote>
+            </div>
+        </div>
+        <!-- End Testimonial -->
+    </div>
+    <!-- End Artikel & Testimonial -->
+
+    <!--Start Menu Sekunder -->
+    <div class="container-full menu-sekunder">
+        <div class="container">
+
+            <!-- Start Coding Design -->
+            <div class="menu-sekunder-one">
+                <h4>SD SANTA THERESIA </h4>
+                <p>Coding Design menyediakan layanan</p>
+                <p>yang terjangkau dan berkualitas</p>
+                <p>Email: <a href="mailto:arryyulyanto@gmail.com">sd_theresia@yahoo.com</a></p>
+                <p>Wa: <a href="telp:+62-123-456-789" title="+62-123-456-789">021-3145794</a>
+          </div>
+            <!-- End Coding Design -->
+            
+            <!-- Start Menu -->
+            <div class="menu-sekunder-two">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li>
+                            <a href="index.html"title="Beranda">
+                                Beranda</a>
+                        </li>
+                        <li>
+                            <a href="tentang.html"title="Tentang Kami">Tentang Kami
+                        </li>
+                        <li>
+                            <a href="layanan.html"title="Layanan">Layanan
+                        </li>
+                        <li>
+                            <a href="artikel.html"title="Artikel">Artikel
+                        </li>
+                        <li>
+                            <a href="pembayaran.html"title="Cara pembayaran">Cara Pembayaran
+                        </li>
+                        <li>
+                            <a href="pertanyaan.html"title="Pertanyaan">Pertanyaan
+                        </li>
+                        <li>
+                            <a href="kontak.html"title="Kontak Kami">Kontak Kami</a>
+                        </li>
+                    </ul>
+            </div>
+            <!-- End Menu -->
+            
+            <!-- Start Media Sosial -->
+            <div class="menu-sekunder-three">
+                <h4>Media Sosial</h4>
+                    <ul>
+                        <li>
+                            <a href="http://facebook.com" title="Facebook-Coding Design">
+                                <img src="images/logo-facebook.png" alt="Logo Facebook"width="30"> 
+                                Facebook - Sd Santa Theresia
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com" title="Instagram-Coding Design">
+                                <img src="images/logo-instagram.png" alt="Logo Instagram"width="30"> 
+                            Instagram - </a><a href="http://facebook.com" title="Facebook-Coding Design">Sd Santa Theresia</a><a href="http://instagram.com" title="Instagram-Coding Design"> </a>
+                        </li>
+                        <li>
+                            <a href="http://tweeter.com" title="Tweeter-Coding Design">
+                                <img src="images/logo-twitter.png" alt="Logo Tweeter"width="30"> 
+                            Twitter - </a><a href="http://facebook.com" title="Facebook-Coding Design">Sd Santa Theresia</a><a href="http://tweeter.com" title="Tweeter-Coding Design"> </a>
+                        </li>
+                    </ul>
+            </div>
+            <!-- End Media Sosial -->
+
+        </div>
+    </div>
+    <!-- End Menu Sekunder-->
+
+    <!-- Start Copyright-->
+    <div class="container copyright">
+        <p>Copyright &copy; 2019 - SD SANTA THERESIA</p>
+    </div>
+    <!-- End Copyright -->
+</body>
+</html>
